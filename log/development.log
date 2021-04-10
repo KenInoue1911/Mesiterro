@@ -774,3 +774,1297 @@ Processing by PostImagesController#index as HTML
 Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.3ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePostComments (20210410035825)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20210410035825_create_post_comments.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "post_comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" text, "user_id" integer, "post_image_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210410035825_create_post_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210410035825"]]
+  ↳ bin/rails:9
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/post_images" for 118.87.177.107 at 2021-04-10 04:31:45 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by PostImagesController#index as HTML
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.4ms)
+
+
+  
+NameError (undefined local variable or method `destro' for #<Class:0x0000000004417720>
+Did you mean?  destroy):
+  
+app/models/post_image.rb:4:in `<class:PostImage>'
+app/models/post_image.rb:1:in `<main>'
+app/controllers/post_images_controller.rb:14:in `index'
+Started GET "/post_images" for 118.87.177.107 at 2021-04-10 04:32:41 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/models/post_image.rb:4:in `<class:PostImage>'
+app/models/post_image.rb:1:in `<main>'
+app/controllers/post_images_controller.rb:14:in `index'
+Started GET "/post_images" for 118.87.177.107 at 2021-04-10 04:34:14 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/models/post_image.rb:4:in `<class:PostImage>'
+app/models/post_image.rb:1:in `<main>'
+app/controllers/post_images_controller.rb:14:in `index'
+Started GET "/users/sign_in" for 118.87.177.107 at 2021-04-10 04:34:16 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"post_images"}, missing required keys: [:id]):
+  
+app/controllers/application_controller.rb:5:in `after_sign_in_path_for'
+Started GET "/" for 118.87.177.107 at 2021-04-10 04:39:01 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 1846ms (Views: 1811.8ms | ActiveRecord: 26.3ms)
+
+
+Started GET "/post_images/new" for 118.87.177.107 at 2021-04-10 04:39:06 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/models/post_image.rb:4:in `<class:PostImage>'
+app/models/post_image.rb:1:in `<main>'
+app/controllers/post_images_controller.rb:3:in `new'
+Started GET "/post_images/new" for 118.87.177.107 at 2021-04-10 04:39:12 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/models/post_image.rb:4:in `<class:PostImage>'
+app/models/post_image.rb:1:in `<main>'
+app/controllers/post_images_controller.rb:3:in `new'
+Started GET "/post_images/new" for 118.87.177.107 at 2021-04-10 04:40:12 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+  Rendering post_images/new.html.erb within layouts/application
+  Rendered post_images/new.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_attachment_definition' for #<PostImage:0x00000000066b5340>):
+    1:   <h1>画像投稿フォーム</h1>
+    2: <%= form_with model: @post_image, local:true do |f| %>
+    3:   <h4>画像</h4>
+    4:   <%= f.attachment_field :image %>
+    5:   <h4>ショップ名</h4>
+    6:   <%= f.text_field :shop_name %>
+    7:   <h4>説明</h4>
+  
+app/views/post_images/new.html.erb:4:in `block in _app_views_post_images_new_html_erb___182932580548512756_57455000'
+app/views/post_images/new.html.erb:2:in `_app_views_post_images_new_html_erb___182932580548512756_57455000'
+Started GET "/post_images/new" for 118.87.177.107 at 2021-04-10 04:40:18 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+  Rendering post_images/new.html.erb within layouts/application
+  Rendered post_images/new.html.erb within layouts/application (20.3ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_attachment_definition' for #<PostImage:0x00007f447c6285c8>):
+    1:   <h1>画像投稿フォーム</h1>
+    2: <%= form_with model: @post_image, local:true do |f| %>
+    3:   <h4>画像</h4>
+    4:   <%= f.attachment_field :image %>
+    5:   <h4>ショップ名</h4>
+    6:   <%= f.text_field :shop_name %>
+    7:   <h4>説明</h4>
+  
+app/views/post_images/new.html.erb:4:in `block in _app_views_post_images_new_html_erb___182932580548512756_69966060689740'
+app/views/post_images/new.html.erb:2:in `_app_views_post_images_new_html_erb___182932580548512756_69966060689740'
+Started GET "/post_images/" for 118.87.177.107 at 2021-04-10 04:41:42 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.2ms)[0m  [1m[34mSELECT "post_images".* FROM "post_images"[0m
+  ↳ app/views/post_images/index.html.erb:1
+  Rendered post_images/index.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `image' for #<PostImage:0x00000000069bad60>
+Did you mean?  image_id):
+    1: <% @post_images.each do |post_image| %>
+    2: <div>
+    3: <%= link_to post_image_path(post_image.id) do %>
+    4:     <%= attachment_image_tag post_image, :image %>
+    5: <% end %>
+    6: 
+    7:   <p>投稿ユーザー画像：<%= image_tag('sample-author1.jpg') %></p>
+  
+app/views/post_images/index.html.erb:4:in `block (2 levels) in _app_views_post_images_index_html_erb___3637069518012923859_55119520'
+app/views/post_images/index.html.erb:3:in `block in _app_views_post_images_index_html_erb___3637069518012923859_55119520'
+app/views/post_images/index.html.erb:1:in `_app_views_post_images_index_html_erb___3637069518012923859_55119520'
+Started GET "/post_images/" for 118.87.177.107 at 2021-04-10 04:42:28 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/post_images"):
+  
+actionpack (5.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.5) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.5) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.5) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/post_images/" for 118.87.177.107 at 2021-04-10 04:42:45 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.2ms)[0m  [1m[34mSELECT "post_images".* FROM "post_images"[0m
+  ↳ app/views/post_images/index.html.erb:1
+  Rendered post_images/index.html.erb within layouts/application (23.2ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 2.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `image' for #<PostImage:0x00000000080c28c8>
+Did you mean?  image_id):
+    1: <% @post_images.each do |post_image| %>
+    2: <div>
+    3: <%= link_to post_image_path(post_image.id) do %>
+    4:     <%= attachment_image_tag post_image, :image %>
+    5: <% end %>
+    6: 
+    7:   <p>投稿ユーザー画像：<%= image_tag('sample-author1.jpg') %></p>
+  
+app/views/post_images/index.html.erb:4:in `block (2 levels) in _app_views_post_images_index_html_erb___3637069518012923859_67230900'
+app/views/post_images/index.html.erb:3:in `block in _app_views_post_images_index_html_erb___3637069518012923859_67230900'
+app/views/post_images/index.html.erb:1:in `_app_views_post_images_index_html_erb___3637069518012923859_67230900'
+Started GET "/post_images/" for 118.87.177.107 at 2021-04-10 04:43:32 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT "post_images".* FROM "post_images"[0m
+  ↳ app/views/post_images/index.html.erb:1
+  Rendered post_images/index.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `image' for #<PostImage:0x00007f447c0db570>
+Did you mean?  image_id):
+    1: <% @post_images.each do |post_image| %>
+    2: <div>
+    3: <%= link_to post_image_path(post_image.id) do %>
+    4:     <%= attachment_image_tag post_image, :image %>
+    5: <% end %>
+    6: 
+    7:   <p>投稿ユーザー画像：<%= image_tag('sample-author1.jpg') %></p>
+  
+app/views/post_images/index.html.erb:4:in `block (2 levels) in _app_views_post_images_index_html_erb___3637069518012923859_69966057827520'
+app/views/post_images/index.html.erb:3:in `block in _app_views_post_images_index_html_erb___3637069518012923859_69966057827520'
+app/views/post_images/index.html.erb:1:in `_app_views_post_images_index_html_erb___3637069518012923859_69966057827520'
+Started GET "/post_images/" for 118.87.177.107 at 2021-04-10 04:50:47 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by PostImagesController#index as HTML
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.2ms)[0m  [1m[34mSELECT "post_images".* FROM "post_images"[0m
+  ↳ app/views/post_images/index.html.erb:1
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT  "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ? LIMIT ?[0m  [["post_image_id", 2], ["LIMIT", 11]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered post_images/index.html.erb within layouts/application (365.0ms)
+Completed 500 Internal Server Error in 390ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `counts' for #<ActiveRecord::Associations::CollectionProxy []>
+Did you mean?  count):
+     8:   <p>ショップ名：<%= post_image.shop_name %></p>
+     9:   <p>説明：<%= post_image.caption %></p>
+    10:   <p>ユーザーネーム：<%= post_image.user.name %></p>
+    11:   <p><%=link_to "#{post_image.post_comments.counts} コメント", post_image_path(post_image.id) %></p>
+    12: </div>
+    13: <% end %>
+  
+app/views/post_images/index.html.erb:11:in `block in _app_views_post_images_index_html_erb___1253593555272610162_44457660'
+app/views/post_images/index.html.erb:1:in `_app_views_post_images_index_html_erb___1253593555272610162_44457660'
+Started GET "/post_images/" for 118.87.177.107 at 2021-04-10 04:51:56 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.2ms)[0m  [1m[34mSELECT "post_images".* FROM "post_images"[0m
+  ↳ app/views/post_images/index.html.erb:1
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT  "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ? LIMIT ?[0m  [["post_image_id", 2], ["LIMIT", 11]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered post_images/index.html.erb within layouts/application (33.4ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `counts' for #<ActiveRecord::Associations::CollectionProxy []>
+Did you mean?  count):
+     8:   <p>ショップ名：<%= post_image.shop_name %></p>
+     9:   <p>説明：<%= post_image.caption %></p>
+    10:   <p>ユーザーネーム：<%= post_image.user.name %></p>
+    11:   <p><%=link_to "#{post_image.post_comments.counts} コメント", post_image_path(post_image.id) %></p>
+    12: </div>
+    13: <% end %>
+  
+app/views/post_images/index.html.erb:11:in `block in _app_views_post_images_index_html_erb___1253593555272610162_70130743739500'
+app/views/post_images/index.html.erb:1:in `_app_views_post_images_index_html_erb___1253593555272610162_70130743739500'
+Started GET "/post_images/" for 118.87.177.107 at 2021-04-10 04:52:50 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT "post_images".* FROM "post_images"[0m
+  ↳ app/views/post_images/index.html.erb:1
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 2]]
+  ↳ app/views/post_images/index.html.erb:11
+  Rendered post_images/index.html.erb within layouts/application (10.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/post_images/2" for 118.87.177.107 at 2021-04-10 04:53:14 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPostImage Load (0.2ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 2]]
+  ↳ app/views/post_images/show.html.erb:13
+  [1m[36mPostComment Load (0.2ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 2]]
+  ↳ app/views/post_images/show.html.erb:14
+  Rendered post_images/show.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 69ms (Views: 58.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/post_images/2/post_comments" for 118.87.177.107 at 2021-04-10 04:53:17 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostCommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yZTlcgxJZ08DPW0MMK7Xt5z6fj9x1pSFl2z90ProHTzDOxsv8asoo47cnFjF2lOhB3XBonIn501kyDmEKrgelQ", "post_comment"=>{"comment"=>"asdsafasfsdf"}, "commit"=>"送信する", "post_image_id"=>"2"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_comments_controller.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_comments_controller.rb:4
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (undefined local variable or method `comennt' for #<PostCommentsController:0x00000000083fa658>
+Did you mean?  comment):
+  
+app/controllers/post_comments_controller.rb:5:in `create'
+Started POST "/post_images/2/post_comments" for 118.87.177.107 at 2021-04-10 04:55:11 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostCommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yZTlcgxJZ08DPW0MMK7Xt5z6fj9x1pSFl2z90ProHTzDOxsv8asoo47cnFjF2lOhB3XBonIn501kyDmEKrgelQ", "post_comment"=>{"comment"=>"asdsafasfsdf"}, "commit"=>"送信する", "post_image_id"=>"2"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_comments_controller.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_comments_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_comments_controller.rb:6
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_comments_controller.rb:6
+  [1m[36mPostComment Create (2.1ms)[0m  [1m[32mINSERT INTO "post_comments" ("comment", "user_id", "post_image_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["comment", "asdsafasfsdf"], ["user_id", 1], ["post_image_id", 2], ["created_at", "2021-04-10 04:55:12.052673"], ["updated_at", "2021-04-10 04:55:12.052673"]]
+  ↳ app/controllers/post_comments_controller.rb:6
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/post_comments_controller.rb:6
+Redirected to https://c514c26e0b0243abb196484842250768.vfs.cloud9.us-east-1.amazonaws.com/post_images/2
+Completed 302 Found in 110ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/post_images/2" for 118.87.177.107 at 2021-04-10 04:55:12 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 2]]
+  ↳ app/views/post_images/show.html.erb:13
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 2]]
+  ↳ app/views/post_images/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:16
+  Rendered post_images/show.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 57ms (Views: 53.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/post_images/2/post_comments" for 118.87.177.107 at 2021-04-10 04:55:29 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostCommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pqzq2-N08WcG-_oESG3UcUdgLvn-2U1UIo7dYlMBbnw-oDLsBZrkPPBGvbufc52eYS7Uwa1zV9XJwipHNX8M9Q", "post_comment"=>{"comment"=>"ooooo"}, "commit"=>"送信する", "post_image_id"=>"2"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_comments_controller.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_comments_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_comments_controller.rb:6
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_comments_controller.rb:6
+  [1m[36mPostComment Create (2.5ms)[0m  [1m[32mINSERT INTO "post_comments" ("comment", "user_id", "post_image_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["comment", "ooooo"], ["user_id", 1], ["post_image_id", 2], ["created_at", "2021-04-10 04:55:29.196641"], ["updated_at", "2021-04-10 04:55:29.196641"]]
+  ↳ app/controllers/post_comments_controller.rb:6
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/post_comments_controller.rb:6
+Redirected to https://c514c26e0b0243abb196484842250768.vfs.cloud9.us-east-1.amazonaws.com/post_images/2
+Completed 302 Found in 21ms (ActiveRecord: 8.3ms)
+
+
+Started GET "/post_images/2" for 118.87.177.107 at 2021-04-10 04:55:29 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 2]]
+  ↳ app/views/post_images/show.html.erb:13
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 2]]
+  ↳ app/views/post_images/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:16
+  Rendered post_images/show.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 52ms (Views: 49.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_images/2" for 118.87.177.107 at 2021-04-10 05:02:26 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPostImage Load (0.4ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 2]]
+  ↳ app/views/post_images/show.html.erb:13
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 2]]
+  ↳ app/views/post_images/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:16
+  Rendered post_images/show.html.erb within layouts/application (48.1ms)
+Completed 200 OK in 114ms (Views: 82.9ms | ActiveRecord: 3.6ms)
+
+
+Started DELETE "/post_images/2/post_comments/1" for 118.87.177.107 at 2021-04-10 05:02:33 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostCommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KeO5Yl14NhCouIg8bYjD1fxaAtSxkFUdQZCrwnuqraqx72FVu5YjS14Fz4O6loo62hT47OI6T5yq3FznHdTPIw", "post_image_id"=>"2", "id"=>"1"}
+  [1m[36mPostComment Load (0.2ms)[0m  [1m[34mSELECT  "post_comments".* FROM "post_comments" WHERE "post_comments"."id" = ? AND "post_comments"."post_image_id" = ? LIMIT ?[0m  [["id", 1], ["post_image_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_comments_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_comments_controller.rb:11
+  [1m[36mPostComment Destroy (1.0ms)[0m  [1m[31mDELETE FROM "post_comments" WHERE "post_comments"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/post_comments_controller.rb:11
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/post_comments_controller.rb:11
+Redirected to https://c514c26e0b0243abb196484842250768.vfs.cloud9.us-east-1.amazonaws.com/post_images/2
+Completed 302 Found in 15ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/post_images/2" for 118.87.177.107 at 2021-04-10 05:02:33 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 2]]
+  ↳ app/views/post_images/show.html.erb:13
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 2]]
+  ↳ app/views/post_images/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:16
+  Rendered post_images/show.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 65ms (Views: 60.3ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/post_images/2" for 118.87.177.107 at 2021-04-10 05:02:36 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"_6QSDhLbX_lNO2fCQ7eoycsMnz8ohbZVFAXSOLiT1ahnqMo59DVKoruGIH2UqeEm7UJlB3svrNT_SSUd3u23IQ", "id"=>"2"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_images_controller.rb:24
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 2]]
+  ↳ app/controllers/post_images_controller.rb:24
+  [1m[36mPostComment Destroy (1.2ms)[0m  [1m[31mDELETE FROM "post_comments" WHERE "post_comments"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/post_images_controller.rb:24
+  [1m[36mPostImage Destroy (0.1ms)[0m  [1m[31mDELETE FROM "post_images" WHERE "post_images"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/post_images_controller.rb:24
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/post_images_controller.rb:24
+Redirected to https://c514c26e0b0243abb196484842250768.vfs.cloud9.us-east-1.amazonaws.com/post_images
+Completed 302 Found in 20ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/post_images" for 118.87.177.107 at 2021-04-10 05:02:36 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.2ms)[0m  [1m[34mSELECT "post_images".* FROM "post_images"[0m
+  ↳ app/views/post_images/index.html.erb:1
+  Rendered post_images/index.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/post_images/new" for 118.87.177.107 at 2021-04-10 05:02:41 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+  Rendering post_images/new.html.erb within layouts/application
+  Rendered post_images/new.html.erb within layouts/application (5.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 84ms (Views: 82.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/post_images" for 118.87.177.107 at 2021-04-10 05:02:59 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kNGqACgf4B33LWNyTorwFAUEaajVvWW1BmSK8aMcAEDph5LADEH1-Wt2PCRmFnjB3xUfqcW7NAW0Px1G4_C1Qw", "post_image"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x0000000007113f08 @tempfile=#<Tempfile:/tmp/RackMultipart20210410-25540-1x1rxs0.jpg>, @original_filename="A34759FD-3FD9-41E1-A4FB-D8102CBA3D56.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post_image[image]\"; filename=\"A34759FD-3FD9-41E1-A4FB-D8102CBA3D56.jpg\"\r\nContent-Type: image/jpeg\r\n">, "shop_name"=>"ショップ名", "caption"=>"説明\r\n"}, "commit"=>"投稿"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[36mPostImage Create (1.9ms)[0m  [1m[32mINSERT INTO "post_images" ("shop_name", "image_id", "caption", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["shop_name", "ショップ名"], ["image_id", "7efae78d96019cf3f8a1ac86198e96ae6c152cd73e701c4a303879b33bb6"], ["caption", "説明\r\n"], ["user_id", 1], ["created_at", "2021-04-10 05:02:59.097068"], ["updated_at", "2021-04-10 05:02:59.097068"]]
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/post_images_controller.rb:9
+Redirected to https://c514c26e0b0243abb196484842250768.vfs.cloud9.us-east-1.amazonaws.com/post_images
+Completed 302 Found in 22ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/post_images" for 118.87.177.107 at 2021-04-10 05:02:59 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT "post_images".* FROM "post_images"[0m
+  ↳ app/views/post_images/index.html.erb:1
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/index.html.erb:11
+  Rendered post_images/index.html.erb within layouts/application (10.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/attachments/c059075e354913934df35894a50a229bc4e89a11/store/7efae78d96019cf3f8a1ac86198e96ae6c152cd73e701c4a303879b33bb6/image" for 118.87.177.107 at 2021-04-10 05:02:59 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-04-10 05:02:59 +0000] GET "/c059075e354913934df35894a50a229bc4e89a11/store/7efae78d96019cf3f8a1ac86198e96ae6c152cd73e701c4a303879b33bb6/image" 200 7.9ms
+
+Started GET "/post_images/4" for 118.87.177.107 at 2021-04-10 05:03:01 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:13
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:14
+  Rendered post_images/show.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 48ms (Views: 43.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/post_images/4/post_comments" for 118.87.177.107 at 2021-04-10 05:03:13 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostCommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U1nPXktbsca5eKrRT6zevOVdJrvTgiXxZ4Vl-rgpUWiWff9WfCNZmpnCTUCXgDkxhrGk6DCHw59yUBN7onwAjQ", "post_comment"=>{"comment"=>"コメント"}, "commit"=>"送信する", "post_image_id"=>"4"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/post_comments_controller.rb:3
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_comments_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_comments_controller.rb:6
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/post_comments_controller.rb:6
+  [1m[36mPostComment Create (1.7ms)[0m  [1m[32mINSERT INTO "post_comments" ("comment", "user_id", "post_image_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["comment", "コメント"], ["user_id", 1], ["post_image_id", 4], ["created_at", "2021-04-10 05:03:13.782880"], ["updated_at", "2021-04-10 05:03:13.782880"]]
+  ↳ app/controllers/post_comments_controller.rb:6
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/post_comments_controller.rb:6
+Redirected to https://c514c26e0b0243abb196484842250768.vfs.cloud9.us-east-1.amazonaws.com/post_images/4
+Completed 302 Found in 22ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/post_images/4" for 118.87.177.107 at 2021-04-10 05:03:13 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:13
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:16
+  Rendered post_images/show.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/post_images/4/post_comments/3" for 118.87.177.107 at 2021-04-10 05:03:24 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostCommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5iIyCqsQilm3HRWy9KaDKJOgAKcKojeS3LrP1vBVr5N-Luo9Tf6fAkGgUg0juMrHte76n1kILRM39jjzlivNGg", "post_image_id"=>"4", "id"=>"3"}
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT  "post_comments".* FROM "post_comments" WHERE "post_comments"."id" = ? AND "post_comments"."post_image_id" = ? LIMIT ?[0m  [["id", 3], ["post_image_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/post_comments_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_comments_controller.rb:11
+  [1m[36mPostComment Destroy (1.2ms)[0m  [1m[31mDELETE FROM "post_comments" WHERE "post_comments"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/post_comments_controller.rb:11
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/post_comments_controller.rb:11
+Redirected to https://c514c26e0b0243abb196484842250768.vfs.cloud9.us-east-1.amazonaws.com/post_images/4
+Completed 302 Found in 14ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/post_images/4" for 118.87.177.107 at 2021-04-10 05:03:24 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:13
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:14
+  Rendered post_images/show.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateFavorites (20210410051036)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20210410051036_create_favorites.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "post_image_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210410051036_create_favorites.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210410051036"]]
+  ↳ bin/rails:9
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/post_images/4" for 118.87.177.107 at 2021-04-10 05:39:51 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPostImage Load (0.2ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."post_image_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["post_image_id", 4], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post_image.rb:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:19
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:26
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:27
+  Rendered post_images/show.html.erb within layouts/application (97.0ms)
+Completed 200 OK in 607ms (Views: 557.3ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/post_images/4/favorites" for 118.87.177.107 at 2021-04-10 05:39:54 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FavoritesController#create as HTML
+  Parameters: {"authenticity_token"=>"iEa9FLP5HSdiSZoRfyJtJbHRAXr2oi_h1cLZ9SsnY5EQSmUjVRcIfJT03a6oPCTKl5_7QqUINWA-ji7QTVkBGA", "post_image_id"=>"4"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorites_controller.rb:5
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:5
+  [1m[36mFavorite Create (2.4ms)[0m  [1m[32mINSERT INTO "favorites" ("user_id", "post_image_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["post_image_id", 4], ["created_at", "2021-04-10 05:39:54.107467"], ["updated_at", "2021-04-10 05:39:54.107467"]]
+  ↳ app/controllers/favorites_controller.rb:5
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/favorites_controller.rb:5
+Redirected to https://c514c26e0b0243abb196484842250768.vfs.cloud9.us-east-1.amazonaws.com/post_images/4
+Completed 302 Found in 42ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/post_images/4" for 118.87.177.107 at 2021-04-10 05:39:54 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[36mFavorite Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."post_image_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["post_image_id", 4], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post_image.rb:9
+  Rendered post_images/show.html.erb within layouts/application (135.6ms)
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `to' for #<#<Class:0x000000000165e9c8>:0x00000000072370d8>
+Did you mean?  t):
+     9:   <% end %>
+    10:   <% if @post_image.favorited_by?(current_user) %>
+    11:    <p>
+    12:      <%= link?to post_image_favorites_path(@post_image), method: :delete do %>
+    13:       ♡<%= @post_image.favorites.count %> いいね！
+    14:      <% end %>
+    15:    </p>
+  
+app/views/post_images/show.html.erb:12:in `_app_views_post_images_show_html_erb__1706104094652008140_59882660'
+Started GET "/post_images/4" for 118.87.177.107 at 2021-04-10 05:40:56 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."post_image_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["post_image_id", 4], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post_image.rb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:26
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:27
+  Rendered post_images/show.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 85ms (Views: 79.0ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/post_images/4/favorites" for 118.87.177.107 at 2021-04-10 05:41:00 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FavoritesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RX5L99enPg6ua353uw3XGKquzdgVaO_yFiXC9mg1O9jdcpPAMUkrVVjWOchsE573jOA34EbC9XP9aTXTDktZUQ", "post_image_id"=>"4"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:12
+  [1m[36mFavorite Load (0.2ms)[0m  [1m[34mSELECT  "favorites".* FROM "favorites" WHERE "favorites"."user_id" = ? AND "favorites"."post_image_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_image_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorites_controller.rb:13
+  [1m[36mFavorite Destroy (1.3ms)[0m  [1m[31mDELETE FROM "favorites" WHERE "favorites"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/favorites_controller.rb:13
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/favorites_controller.rb:13
+Redirected to https://c514c26e0b0243abb196484842250768.vfs.cloud9.us-east-1.amazonaws.com/post_images/4
+Completed 302 Found in 19ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/post_images/4" for 118.87.177.107 at 2021-04-10 05:41:00 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."post_image_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["post_image_id", 4], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post_image.rb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:19
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:26
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:27
+  Rendered post_images/show.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 63ms (Views: 59.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/post_images/4/favorites" for 118.87.177.107 at 2021-04-10 05:41:03 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by FavoritesController#create as HTML
+  Parameters: {"authenticity_token"=>"1RgWk8tAX_vVmlISI0q1gCEKypIB6DVpwsgW53R6pQ1NFM6kLa5KoCMnFa30VPxvB0QwqlJCL-gphOHCEgTHhA", "post_image_id"=>"4"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/favorites_controller.rb:5
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/favorites_controller.rb:5
+  [1m[36mFavorite Create (1.5ms)[0m  [1m[32mINSERT INTO "favorites" ("user_id", "post_image_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["post_image_id", 4], ["created_at", "2021-04-10 05:41:03.342029"], ["updated_at", "2021-04-10 05:41:03.342029"]]
+  ↳ app/controllers/favorites_controller.rb:5
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/favorites_controller.rb:5
+Redirected to https://c514c26e0b0243abb196484842250768.vfs.cloud9.us-east-1.amazonaws.com/post_images/4
+Completed 302 Found in 20ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/post_images/4" for 118.87.177.107 at 2021-04-10 05:41:03 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPostImage Load (0.2ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."post_image_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["post_image_id", 4], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post_image.rb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:26
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:27
+  Rendered post_images/show.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 66ms (Views: 57.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/post_images/4" for 118.87.177.107 at 2021-04-10 05:47:15 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.5/lib/active_record/log_subscriber.rb:98
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."post_image_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["post_image_id", 4], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post_image.rb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:26
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:27
+  Rendered post_images/show.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 409ms (Views: 381.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/post_images/new" for 118.87.177.107 at 2021-04-10 05:47:22 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+  Rendering post_images/new.html.erb within layouts/application
+  Rendered post_images/new.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/post_images/" for 118.87.177.107 at 2021-04-10 05:47:29 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.2ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/index.html.erb:1
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/index.html.erb:11
+  Rendered post_images/index.html.erb within layouts/application (11.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/post_images/4" for 118.87.177.107 at 2021-04-10 05:47:30 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."post_image_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["post_image_id", 4], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post_image.rb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:26
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/show.html.erb:27
+  Rendered post_images/show.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 65ms (Views: 62.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/post_images/new" for 118.87.177.107 at 2021-04-10 05:48:09 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+  Rendering post_images/new.html.erb within layouts/application
+  Rendered post_images/new.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 88ms (Views: 86.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/post_images" for 118.87.177.107 at 2021-04-10 05:48:17 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8STaSN-HnLuzoMuUMJAOWP21B2YucwLFzFYZaH9RMxaIcuKI-9mJXy_7lMIYDIaNJ6RxZz51U3V-DY7fP72GFQ", "post_image"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8fc81319b0 @tempfile=#<Tempfile:/tmp/RackMultipart20210410-1072-z9sq56.png>, @original_filename="142_refileDownloadImage.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post_image[image]\"; filename=\"142_refileDownloadImage.png\"\r\nContent-Type: image/png\r\n">, "shop_name"=>"jkjk", "caption"=>"as"}, "commit"=>"投稿"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[36mPostImage Create (1.3ms)[0m  [1m[32mINSERT INTO "post_images" ("shop_name", "image_id", "caption", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["shop_name", "jkjk"], ["image_id", "03b055d0d1ec3b5edd3dabac32ebe43d6bb157bef8028d409d18af8ce47e"], ["caption", "as"], ["user_id", 1], ["created_at", "2021-04-10 05:48:17.037800"], ["updated_at", "2021-04-10 05:48:17.037800"]]
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/post_images_controller.rb:9
+Redirected to https://c514c26e0b0243abb196484842250768.vfs.cloud9.us-east-1.amazonaws.com/post_images
+Completed 302 Found in 25ms (ActiveRecord: 8.4ms)
+
+
+Started GET "/post_images" for 118.87.177.107 at 2021-04-10 05:48:17 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/index.html.erb:1
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 5]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/index.html.erb:11
+  Rendered post_images/index.html.erb within layouts/application (15.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/attachments/d43e13bb2437ad2c6bfc7b6a983d4931ed626f8d/store/03b055d0d1ec3b5edd3dabac32ebe43d6bb157bef8028d409d18af8ce47e/image" for 118.87.177.107 at 2021-04-10 05:48:17 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-04-10 05:48:17 +0000] GET "/d43e13bb2437ad2c6bfc7b6a983d4931ed626f8d/store/03b055d0d1ec3b5edd3dabac32ebe43d6bb157bef8028d409d18af8ce47e/image" 200 8.7ms
+
+Started GET "/post_images/5" for 118.87.177.107 at 2021-04-10 05:48:22 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" WHERE "post_images"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:18
+  Rendering post_images/show.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/show.html.erb:7
+  [1m[36mFavorite Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "favorites" WHERE "favorites"."post_image_id" = ? AND "favorites"."user_id" = ? LIMIT ?[0m  [["post_image_id", 5], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post_image.rb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "favorites" WHERE "favorites"."post_image_id" = ?[0m  [["post_image_id", 5]]
+  ↳ app/views/post_images/show.html.erb:19
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 5]]
+  ↳ app/views/post_images/show.html.erb:26
+  [1m[36mPostComment Load (0.1ms)[0m  [1m[34mSELECT "post_comments".* FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 5]]
+  ↳ app/views/post_images/show.html.erb:27
+  Rendered post_images/show.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 63ms (Views: 58.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/post_images/new" for 118.87.177.107 at 2021-04-10 05:50:19 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+  Rendering post_images/new.html.erb within layouts/application
+  Rendered post_images/new.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/post_images" for 118.87.177.107 at 2021-04-10 05:50:28 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q20jG9uNiiGRgAMMVJvwPPRQKGU_7OWewr7bQ3EgSIzSOxvb_9OfxQ3bXFp8B3jpLkFeZC_qtC5w5Uz0Mcz9jw", "post_image"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8fc81bfad0 @tempfile=#<Tempfile:/tmp/RackMultipart20210410-1072-7yf4y0.png>, @original_filename="142_refileDownloadImage.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post_image[image]\"; filename=\"142_refileDownloadImage.png\"\r\nContent-Type: image/png\r\n">, "shop_name"=>"dsfsdf", "caption"=>"dfgdfgdf"}, "commit"=>"投稿"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[36mPostImage Create (2.3ms)[0m  [1m[32mINSERT INTO "post_images" ("shop_name", "image_id", "caption", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["shop_name", "dsfsdf"], ["image_id", "3ed1e0382fd5d46fdc36eafc7323b9895d5eb4be409c55b3152b78fb1e28"], ["caption", "dfgdfgdf"], ["user_id", 1], ["created_at", "2021-04-10 05:50:28.441008"], ["updated_at", "2021-04-10 05:50:28.441008"]]
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/post_images_controller.rb:9
+Redirected to https://c514c26e0b0243abb196484842250768.vfs.cloud9.us-east-1.amazonaws.com/post_images
+Completed 302 Found in 23ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/post_images" for 118.87.177.107 at 2021-04-10 05:50:28 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/index.html.erb:1
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 6]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 5]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/index.html.erb:11
+  Rendered post_images/index.html.erb within layouts/application (20.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 92ms (Views: 90.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/attachments/49ff1affac2c29109a527e9a449e054e588a8a5c/store/3ed1e0382fd5d46fdc36eafc7323b9895d5eb4be409c55b3152b78fb1e28/image" for 118.87.177.107 at 2021-04-10 05:50:28 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-04-10 05:50:28 +0000] GET "/49ff1affac2c29109a527e9a449e054e588a8a5c/store/3ed1e0382fd5d46fdc36eafc7323b9895d5eb4be409c55b3152b78fb1e28/image" 200 3.5ms
+
+Started GET "/post_images/new" for 118.87.177.107 at 2021-04-10 05:50:35 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+  Rendering post_images/new.html.erb within layouts/application
+  Rendered post_images/new.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/post_images" for 118.87.177.107 at 2021-04-10 05:50:43 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"20fmkkgdymCbedl-Elwh4fnnwo5BCWixfa-za_maJuGiEd5SbEPfhAcihig6wKk0I_a0j1EPOQHP9CTcuXaT4g", "post_image"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8fc1249fc0 @tempfile=#<Tempfile:/tmp/RackMultipart20210410-1072-14otk66.jpg>, @original_filename="A34759FD-3FD9-41E1-A4FB-D8102CBA3D56.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post_image[image]\"; filename=\"A34759FD-3FD9-41E1-A4FB-D8102CBA3D56.jpg\"\r\nContent-Type: image/jpeg\r\n">, "shop_name"=>"gdgdfgdfgg", "caption"=>"dgdfgdgdfgdgdg"}, "commit"=>"投稿"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[36mPostImage Create (1.5ms)[0m  [1m[32mINSERT INTO "post_images" ("shop_name", "image_id", "caption", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["shop_name", "gdgdfgdfgg"], ["image_id", "ac50053591a384b58c070a56cb2e2ea46871d86edc68e6013d678a6f6144"], ["caption", "dgdfgdgdfgdgdg"], ["user_id", 1], ["created_at", "2021-04-10 05:50:43.904349"], ["updated_at", "2021-04-10 05:50:43.904349"]]
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/post_images_controller.rb:9
+Redirected to https://c514c26e0b0243abb196484842250768.vfs.cloud9.us-east-1.amazonaws.com/post_images
+Completed 302 Found in 20ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/post_images" for 118.87.177.107 at 2021-04-10 05:50:44 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/index.html.erb:1
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 7]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 6]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 5]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/index.html.erb:11
+  Rendered post_images/index.html.erb within layouts/application (25.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 63ms (Views: 61.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/attachments/d232d7e5fcf138ce542b9b252c8fbf265839a443/store/ac50053591a384b58c070a56cb2e2ea46871d86edc68e6013d678a6f6144/image" for 118.87.177.107 at 2021-04-10 05:50:44 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-04-10 05:50:44 +0000] GET "/d232d7e5fcf138ce542b9b252c8fbf265839a443/store/ac50053591a384b58c070a56cb2e2ea46871d86edc68e6013d678a6f6144/image" 200 5.7ms
+
+Started GET "/post_images/new" for 118.87.177.107 at 2021-04-10 05:50:45 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+  Rendering post_images/new.html.erb within layouts/application
+  Rendered post_images/new.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 65ms (Views: 64.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/post_images" for 118.87.177.107 at 2021-04-10 05:50:53 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LDqJi3a1pAM4fa5jShccF3XOb7hwGAy9D9eRqkC2xCJVbLFLUuux56Qm8TVii5TCr98ZuWAeXQ29jAYdAFpxIQ", "post_image"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8fd40f2ec0 @tempfile=#<Tempfile:/tmp/RackMultipart20210410-1072-1cjtj2c.png>, @original_filename="142_refileDownloadImage.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post_image[image]\"; filename=\"142_refileDownloadImage.png\"\r\nContent-Type: image/png\r\n">, "shop_name"=>"hgfhgfhgfhfhhhh", "caption"=>"fhhhhhhhhhhhhhhhh"}, "commit"=>"投稿"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[36mPostImage Create (1.3ms)[0m  [1m[32mINSERT INTO "post_images" ("shop_name", "image_id", "caption", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["shop_name", "hgfhgfhgfhfhhhh"], ["image_id", "50057334df1cb454f278bd8851d123e6e54806b7004437064b99e3be7556"], ["caption", "fhhhhhhhhhhhhhhhh"], ["user_id", 1], ["created_at", "2021-04-10 05:50:53.341645"], ["updated_at", "2021-04-10 05:50:53.341645"]]
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/post_images_controller.rb:9
+Redirected to https://c514c26e0b0243abb196484842250768.vfs.cloud9.us-east-1.amazonaws.com/post_images
+Completed 302 Found in 20ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/post_images" for 118.87.177.107 at 2021-04-10 05:50:53 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/index.html.erb:1
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 8]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 7]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 6]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 5]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_images"[0m
+  ↳ app/views/post_images/index.html.erb:14
+  Rendered post_images/index.html.erb within layouts/application (45.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 99ms (Views: 96.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/attachments/58fb8dab73615e17ff53c185e20815b56a1233a3/store/50057334df1cb454f278bd8851d123e6e54806b7004437064b99e3be7556/image" for 118.87.177.107 at 2021-04-10 05:50:53 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-04-10 05:50:53 +0000] GET "/58fb8dab73615e17ff53c185e20815b56a1233a3/store/50057334df1cb454f278bd8851d123e6e54806b7004437064b99e3be7556/image" 200 2.7ms
+
+Started GET "/post_images/new" for 118.87.177.107 at 2021-04-10 05:50:55 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#new as HTML
+  Rendering post_images/new.html.erb within layouts/application
+  Rendered post_images/new.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/post_images" for 118.87.177.107 at 2021-04-10 05:51:03 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"-EyK884IvNaYXfhB-CBz-pYw2zxjrVEVWsByIbcYEduBGrIz6lapMgQGpxfQvPsvTCGtPXOrAKXom-WW9_Sk2A", "post_image"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8fbc2dfcc8 @tempfile=#<Tempfile:/tmp/RackMultipart20210410-1072-xtsnwb.jpg>, @original_filename="A34759FD-3FD9-41E1-A4FB-D8102CBA3D56.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post_image[image]\"; filename=\"A34759FD-3FD9-41E1-A4FB-D8102CBA3D56.jpg\"\r\nContent-Type: image/jpeg\r\n">, "shop_name"=>"gfhfghfhfghfhfgh", "caption"=>"fghgfhhhhhhhhhhhhhh"}, "commit"=>"投稿"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[36mPostImage Create (1.5ms)[0m  [1m[32mINSERT INTO "post_images" ("shop_name", "image_id", "caption", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["shop_name", "gfhfghfhfghfhfgh"], ["image_id", "fdb122cb289a20843a0aca1b2e39dc4e1da25cff05ef3610f8a6b4adbe62"], ["caption", "fghgfhhhhhhhhhhhhhh"], ["user_id", 1], ["created_at", "2021-04-10 05:51:03.640288"], ["updated_at", "2021-04-10 05:51:03.640288"]]
+  ↳ app/controllers/post_images_controller.rb:9
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/post_images_controller.rb:9
+Redirected to https://c514c26e0b0243abb196484842250768.vfs.cloud9.us-east-1.amazonaws.com/post_images
+Completed 302 Found in 20ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/post_images" for 118.87.177.107 at 2021-04-10 05:51:03 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/post_images/index.html.erb:1
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 9]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 8]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 7]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 6]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 5]]
+  ↳ app/views/post_images/index.html.erb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_images"[0m
+  ↳ app/views/post_images/index.html.erb:14
+  Rendered post_images/index.html.erb within layouts/application (57.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 111ms (Views: 108.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/attachments/c436569966f6012ea6c32fd4553695d2565c3dc4/store/fdb122cb289a20843a0aca1b2e39dc4e1da25cff05ef3610f8a6b4adbe62/image" for 118.87.177.107 at 2021-04-10 05:51:04 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-04-10 05:51:04 +0000] GET "/c436569966f6012ea6c32fd4553695d2565c3dc4/store/fdb122cb289a20843a0aca1b2e39dc4e1da25cff05ef3610f8a6b4adbe62/image" 200 6.1ms
+
+Started GET "/post_images?page=2" for 118.87.177.107 at 2021-04-10 05:51:10 +0000
+Cannot render console from 118.87.177.107! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostImagesController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering post_images/index.html.erb within layouts/application
+  [1m[36mPostImage Load (0.1ms)[0m  [1m[34mSELECT  "post_images".* FROM "post_images" ORDER BY "post_images"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 5]]
+  ↳ app/views/post_images/index.html.erb:1
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_images/index.html.erb:10
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "post_comments" WHERE "post_comments"."post_image_id" = ?[0m  [["post_image_id", 4]]
+  ↳ app/views/post_images/index.html.erb:11
+  Rendered post_images/index.html.erb within layouts/application (16.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.5ms)
+
+
